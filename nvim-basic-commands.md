@@ -42,7 +42,7 @@ an unwanted and partially completed command.
 
 7.  To undo previous actions, type: `u`{normal} (lowercase u)
     To undo all the changes on a line, type: `U`{normal} (capital U)
-    To undo the undo's, type: `<C-r>`{normal}
+    To undo the undo's, type: `<Ctrl-r>`{normal}
 
 ### Lesson 3 SUMMARY
 
@@ -62,7 +62,7 @@ an unwanted and partially completed command.
 
 ### Lesson 4 SUMMARY
 
-1.  `<C-g>`{normal} displays your location and the file status.\
+1.  `<Ctrl-g>`{normal} displays your location and the file status.\
     `G`{normal} moves to the end of the file.\
     number `G`{normal} moves to that line number.\
     `gg`{normal} moves to the first line.
@@ -71,7 +71,7 @@ an unwanted and partially completed command.
     Typing `?`{normal} followed by a phrase searches BACKWARD for the phrase.\
     After a search type `n`{normal} to find the next occurrence in the same
     direction or `N`{normal} to search in the opposite direction.\
-    `<C-o>`{normal} takes you back to older positions, `<C-i>`{normal} to
+    `<Ctrl-o>`{normal} takes you back to older positions, `<Ctrl-i>`{normal} to
     newer positions.
 
 3.  Typing `%`{normal} while the cursor is on a (,),[,],{, or } goes to its
@@ -157,11 +157,11 @@ an unwanted and partially completed command.
 
 2.  Type `:help TOPIC`{vim} to find help on TOPIC.
 
-3.  Type `<C-w><C-w>`{normal} to jump to another window
+3.  Type `<Ctrl-w><Ctrl-w>`{normal} to jump to another window
 
 4.  Type `:q`{vim} to close the help window
 
 5.  Create a vimrc startup script to keep your preferred settings.
 
-6.  While in command mode, press `<C-d>`{normal} to see possible completions.\
+6.  While in command mode, press `<Ctrl-d>`{normal} to see possible completions.\
     Press `<Tab>`{normal} to use one completion.

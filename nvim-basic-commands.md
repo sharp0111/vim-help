@@ -5,18 +5,17 @@
 
 2.  To start Vim from the shell prompt type:
 
-```sh
-    $ nvim FILENAME
-```
+\~~~ sh\
+ \$ nvim FILENAME
 
 3.  To exit Vim type: `<Esc>`{normal} `:q!`{vim} `<Enter>`{normal} to trash
-    all changes.
+    all changes.\
     OR type: `<Esc>`{normal} `:wq`{vim} `<Enter>`{normal} to save
     the changes.
 
 4.  To delete the character at the cursor type: `x`{normal}
 
-5.  To insert or append text type:
+5.  To insert or append text type:\
     `i`{normal} insert text `<Esc>`{normal} insert before the cursor.
     `A`{normal} append text `<Esc>`{normal} append after the line.
 
@@ -30,14 +29,14 @@ an unwanted and partially completed command.
 3.  To delete a whole line type: `dd`{normal}
 4.  To repeat a motion prepend it with a number: `2w`{normal}
 
-5.  The format for a change command is:
-    operator [number] motion
+5.  The format for a change command is:\
+    operator [number] motion\
     where:
-    operator - is what to do, such as [d](d) for delete
-    [number] - is an optional count to repeat the motion
+    operator - is what to do, such as `[d](d)` for delete\
+    [number] - is an optional count to repeat the motion\
     motion - moves over the text to operate on, such as:
-    [w](w) (word),
-    [\$]($) (to the end of line), etc.
+    `[w](w)` (word),
+    `[\$]($)` (to the end of line), etc.
 
 6.  To move to the start of the line use a zero: `[0](0)`
 
@@ -54,25 +53,24 @@ an unwanted and partially completed command.
 2.  To replace the character under the cursor, type [r](r) and then the
     character you want to have there.
 
-3.  The `[change operator](c)` allows you to change from the cursor to where
+3.  The `[change operator](c)` allows you to change from the cursor to where\
     the motion takes you. Type `ce`{normal} to change from the cursor to the
     end of the word, `c$`{normal} to change to the end of a line.
 
-4.  The format for change is:
-
+4.  The format for change is:\
     c [number] motion
 
 ### Lesson 4 SUMMARY
 
-1.  `<C-g>`{normal} displays your location and the file status.
-    `G`{normal} moves to the end of the file.
-    number `G`{normal} moves to that line number.
+1.  `<C-g>`{normal} displays your location and the file status.\
+    `G`{normal} moves to the end of the file.\
+    number `G`{normal} moves to that line number.\
     `gg`{normal} moves to the first line.
 
-2.  Typing `/`{normal} followed by a phrase searches FORWARD for the phrase.
-    Typing `?`{normal} followed by a phrase searches BACKWARD for the phrase.
+2.  Typing `/`{normal} followed by a phrase searches FORWARD for the phrase.\
+    Typing `?`{normal} followed by a phrase searches BACKWARD for the phrase.\
     After a search type `n`{normal} to find the next occurrence in the same
-    direction or `N`{normal} to search in the opposite direction.
+    direction or `N`{normal} to search in the opposite direction.\
     `<C-o>`{normal} takes you back to older positions, `<C-i>`{normal} to
     newer positions.
 
@@ -103,8 +101,8 @@ an unwanted and partially completed command.
 
 1.  `[:!command](:!cmd)` executes an external command.
 
-    Some useful examples are:
-    `:!ls`{vim} - shows a directory listing
+    Some useful examples are:\
+    `:!ls`{vim} - shows a directory listing\
     `:!rm FILENAME`{vim} - removes file FILENAME
 
 2.  `[:w](:w)` FILENAME writes the current Vim file to disk with
@@ -121,25 +119,22 @@ an unwanted and partially completed command.
 
 ### Lesson 6 SUMMARY
 
-1.  Type `o`{normal} to open a line BELOW the cursor and start Insert mode.
+1.  Type `o`{normal} to open a line BELOW the cursor and start Insert mode.\
     Type `O`{normal} to open a line ABOVE the cursor.
 
-2.  Type `a`{normal} to insert text AFTER the cursor.
+2.  Type `a`{normal} to insert text AFTER the cursor.\
     Type `A`{normal} to insert text after the end of the line.
 
 3.  The `e`{normal} command moves to the end of a word.
 
 4.  The `y`{normal} operator copies text, `p`{normal} pastes it.
 
-5.  Typing a capital `R`{normal} enters Replace mode until `<Esc>`{normal} is
-    pressed.
+5.  Typing a capital `R`{normal} enters Replace mode until `<Esc>`{normal} is pressed.
 
-6.  Typing "`[:set](:set)` xxx" sets the option "xxx". Some options are:
-
-        'ic' 'ignorecase'   ignore upper/lower case when searching
-        'is' 'incsearch'    show partial matches for a search phrase
-        'hls' 'hlsearch'    highlight all matching phrases
-
+6.  Typing "`[:set](:set)` xxx" sets the option "xxx". Some options are:\
+     'ic' 'ignorecase' ignore upper/lower case when searching\
+     'is' 'incsearch' show partial matches for a search phrase\
+     'hls' 'hlsearch' highlight all matching phrases\
     You can either use the long or the short option name.
 
 7.  Prepend "no" to switch an option off:\
@@ -152,7 +147,7 @@ an unwanted and partially completed command.
 
 ### Lesson 7 SUMMARY
 
-1.  Type `:help`{vim}
+1.  Type `:help`{vim}\
     or press `<F1>`{normal} or `<Help>`{normal} to open a help window.
 
 2.  Type `:help TOPIC`{vim} to find help on TOPIC.
@@ -163,5 +158,5 @@ an unwanted and partially completed command.
 
 5.  Create a vimrc startup script to keep your preferred settings.
 
-6.  While in command mode, press `<C-d>`{normal} to see possible completions.
+6.  While in command mode, press `<C-d>`{normal} to see possible completions.\
     Press `<Tab>`{normal} to use one completion.
